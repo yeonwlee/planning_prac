@@ -3,6 +3,7 @@ from routers import audio, ai_chat
 import uvicorn
 import ssl
 import os
+import constants.log 
 
 app = FastAPI()
 app.include_router(audio.audio_router, prefix='/audio')
